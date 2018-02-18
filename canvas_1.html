@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Canvas Array Example</title>
+	</head>
+	<body>
+		<canvas id="myCanvas" width="800" height="800" style="border:1px solid #d3d3d3;">
+		Your browser does not support the HTML5 canvas tag.</canvas>
+		
+		<script>
+			var c = document.getElementById("myCanvas");
+			var ctx = c.getContext("2d");
+			//just the one!
+
+			var d = c.width/2;
+			console.log(d);
+			var t = c.height/2;
+			console.log(t);
+
+			ctx.beginPath();
+			ctx.arc(d,t,40,0,2*Math.PI);
+			ctx.stroke();
+
+
+
+		</script>
+		
+	</body>
+</html>
